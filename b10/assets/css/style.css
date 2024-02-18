@@ -1,25 +1,6 @@
-/*-----------------------------------*\
-  #index.css
-\*-----------------------------------*/
-
-/**
- * copyright 2022 codewithsadee
- */
-
-
-
-
-
-/*-----------------------------------*\
-  #CUSTOM PROPERTY
-\*-----------------------------------*/
-
-:root {
-
-  /**
-   * COLORS
-   */
-
+/* khai báo toàn cục :root */
+:root 
+{
   --gold-crayola: hsl(38, 61%, 73%);
   --quick-silver: hsla(0, 0%, 65%, 1);
   --davys-grey: hsla(30, 3%, 34%, 1);
@@ -36,23 +17,10 @@
   --black: hsla(0, 0%, 0%, 1);
   --black-alpha-80: hsla(0, 0%, 0%, 0.8);
   --black-alpha-15: hsla(0, 0%, 0%, 0.15);
-
-  /**
-   * GRADIENT COLOR
-   */
-
   --loading-text-gradient: linear-gradient(90deg, transparent 0% 16.66%, var(--smoky-black-3) 33.33% 50%,  transparent 66.66% 75%);
   --gradient-1: linear-gradient(to top,hsla(0, 0%, 0%, 0.9),hsla(0, 0%, 0%, 0.7),transparent);
-
-  /**
-   * TYPOGRAPHY
-   */
-
-  /* font-family */
   --fontFamily-forum: 'Forum', cursive;
   --fontFamily-dm_sans: 'DM Sans', sans-serif;
-
-  /* font-size */
   --fontSize-display-1: calc(1.3rem + 6.7vw);
   --fontSize-headline-1: calc(2rem + 2.5vw);
   --fontSize-headline-2: calc(1.3rem + 2.4vw);
@@ -79,7 +47,7 @@
   --lineHeight-5: 1.85em;
   --lineHeight-6: 1.4em;
 
-  /* letter-spacing */
+  /* letter-spacing : khoảng  */
   --letterSpacing-1: 0.15em;
   --letterSpacing-2: 0.4em;
   --letterSpacing-3: 0.2em;
@@ -114,14 +82,6 @@
   --transition-3: 1000ms ease;
 
 }
-
-
-
-
-
-/*-----------------------------------*\
-  #RESET
-\*-----------------------------------*/
 
 *,
 *::before,
