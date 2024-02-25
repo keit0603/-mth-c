@@ -3,56 +3,56 @@
   <head>
     <meta charset="utf-8">
     <title>Transparent register Form UI</title>
-    <link rel="stylesheet" href="assets/css/login.css">
-   <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <link rel="stylesheet" href="assets/css/register.css">
+    <link rel="stylesheet" href="assets/css/style copy.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
   </head>
   <body>
-    <div class="bg-img">
-      <div class="content">
+    <div class="register-container">
+      <div class="aside-right">
         <header>register Form</header>
-        <form action="#">
-          <div class="field">
-            <span class="fa fa-user"></span>
-            <input type="text" required placeholder="Name">
+        <form id="register-form">
+          <div class="input-name-wrapper">
+            <div class="input-wrapper">
+              <input type="text" name="firstName" placeholder="First name..">
+              <div class="error" id="first-name-error"></div>
+            </div>
+  
+            <div class="input-wrapper">
+              <input type="text" name="lastName" placeholder="Last name..">
+              <div class="error" id="last-name-error"></div>
+            </div>
           </div>
-          <div class="field space">
-            <span class="fa fa-lock"></span>
-            <input type="password" class="pass-key" required placeholder="Email">
-            <span class="show">SHOW</span>
+  
+          <div class="input-wrapper">
+            <input type="email" name="email" placeholder="Email...">
+            <div class="error" id="email-error"></div>
           </div>
-          <div class="field space">
-            <span class="fa fa-lock"></span>
-            <input type="password" class="pass-key" required placeholder="Password">
-            <span class="show">SHOW</span>
+  
+          <div class="input-wrapper">
+            <input type="password" name="password" placeholder="Password...">
+            <div class="error" id="password-error"></div>
           </div>
-          <div class="pass">
-            <a href="#">Forgot Password?</a>
+  
+          <div class="input-wrapper">
+            <input type="password" name="confirmPassword" placeholder="Confirm password...">
+            <div class="error" id="confirm-password-error"></div>
           </div>
-          <div class="field">
-            <input type="submit" value="Register">
+  
+          <div class="input-wrapper">
+            <input type="submit" value="register">
           </div>
+  
         </form>
         <div class="signup">Do have account?
-          <a href="#">SignIn Now</a>
+          <a href="http://127.0.0.1:5500/b10/login.html">SignIn Now</a>
         </div>
       </div>
     </div>
 
-    <script>
-      const pass_field = document.querySelector('.pass-key');
-      const showBtn = document.querySelector('.show');
-      showBtn.addEventListener('click', function(){
-       if(pass_field.type === "password"){
-         pass_field.type = "text";
-         showBtn.textContent = "HIDE";
-         showBtn.style.color = "#3498db";
-       }else{
-         pass_field.type = "password";
-         showBtn.textContent = "SHOW";
-         showBtn.style.color = "#222";
-       }
-      });
-    </script>
+    <script type="module" src="assets/js/firebase.js"></script>
+    <script type="module" src="assets/js/register.js"></script>
+    <script src="assets/js/controler.js"></script>
 
 
   </body>
